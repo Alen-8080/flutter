@@ -15,18 +15,23 @@ class Home extends StatelessWidget {
         centerTitle: true,
         backgroundColor: Colors.cyan[600],
       ),
-      body: Center(
-
-        child: RaisedButton.icon(
-          onPressed: () {},
-          icon: Icon(
-            Icons.mail
+      body: Row(
+        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          Text('HELLO Guys'),
+          FlatButton(
+              onPressed: (){},
+              color: Colors.cyan[800],
+              child: Text('Click me')
           ),
-            label: Text('mail me'),
-            color: Colors.cyan,
-        ),
+          Container(
+            color: Colors.cyanAccent,
+            padding: EdgeInsets.all(30.0),
+            child: Text('Inside Continer'),
+          )
+        ],
       ),
-
       floatingActionButton : FloatingActionButton(
         onPressed : () {} ,
         backgroundColor: Colors.cyan[600],
